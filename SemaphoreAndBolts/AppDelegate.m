@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CCBoltsViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    CCBoltsViewController *boltsViewController = [[CCBoltsViewController alloc] init];
+    self.window.rootViewController = boltsViewController;
+    
     return YES;
 }
 
