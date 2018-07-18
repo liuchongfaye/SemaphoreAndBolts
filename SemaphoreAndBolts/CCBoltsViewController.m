@@ -23,19 +23,19 @@
     
     UIButton *semaphoreButton = [UIButton buttonWithType:UIButtonTypeCustom];
     semaphoreButton.backgroundColor = [UIColor redColor];
-    [semaphoreButton setTitle:@"semaphore" forState:UIControlStateNormal];
+    [semaphoreButton setTitle:@"semaphore(信号量并发多任务)" forState:UIControlStateNormal];
     [semaphoreButton addTarget:self action:@selector(semaphore) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:semaphoreButton];
     
     UIButton *boltsConcurrenceButton = [UIButton buttonWithType:UIButtonTypeCustom];
     boltsConcurrenceButton.backgroundColor = [UIColor greenColor];
-    [boltsConcurrenceButton setTitle:@"boltsConcurrence" forState:UIControlStateNormal];
+    [boltsConcurrenceButton setTitle:@"boltsConcurrence(Bolts并发多任务）" forState:UIControlStateNormal];
     [boltsConcurrenceButton addTarget:self action:@selector(boltsConcurrence) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:boltsConcurrenceButton];
     
     UIButton *boltsSerialButton = [UIButton buttonWithType:UIButtonTypeCustom];
     boltsSerialButton.backgroundColor = [UIColor blueColor];
-    [boltsSerialButton setTitle:@"boltsSerial" forState:UIControlStateNormal];
+    [boltsSerialButton setTitle:@"boltsSerial(Bolts串行任务）" forState:UIControlStateNormal];
     [boltsSerialButton addTarget:self action:@selector(boltsSerial) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:boltsSerialButton];
     
